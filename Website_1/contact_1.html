@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/2b7374e1a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="box">
+        <nav><h1>Contact Information</h1></nav>
+        <form>
+
+            <div class="row">
+                <div class="input_group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                </div>
+                <div class="input_group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-phone"></i> Phone No.</label>
+                </div>
+            </div>
+            
+            <div class="input_group">
+                <input type="email" id="email" required>
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email id</label>
+            </div>
+            <div class="input_group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message"><i class="fa-solid fa-message"></i> Your Message</label>
+            </div>
+            <button type="submit">SUBMIT<i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+
+    </div>
+    
+</body>
+</html>

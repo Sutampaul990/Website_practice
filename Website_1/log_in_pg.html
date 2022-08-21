@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log In page setup</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    
+    <div class="loginbox">
+       <img src="/Programming/Project/Website_1/Files/hacker.png" class="avatar">
+       <h1>Login Here</h1>
+       <form>
+        <p>UserName</p>
+        <input type="text" name="" placeholder="Enter User-name">
+        <p>PassWord</p>
+        <input type="password" name="" placeholder="Enter password">
+        <input type="submit" name="" value="Login" onclick="openPopup()"><br>
+        <div class="popup" id="popup">
+            <img src="/Programming/Project/Website_1/Files/404-tick.png" >
+            <h2>Thank You!</h2>
+            <p>You have successfully logged in..Thanks!</p>
+            <button type="button" onclick="closePopup()" >OK</button>
+        </div>
+        <a href="#">Lost your password?</a><br>
+        <a href="#">Don't have an account?</a>
+       </form>
+
+    </div>
+<script>
+
+    let popup=document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+        
+    }
+</script>
+</body>
+</html>
